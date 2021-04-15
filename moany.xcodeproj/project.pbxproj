@@ -1,0 +1,823 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		55E5E17A26288BFE00CF150B /* moany WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 55E5E17926288BFE00CF150B /* moany WatchKit App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		55E5E18026288BFE00CF150B /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 55E5E17E26288BFE00CF150B /* Interface.storyboard */; };
+		55E5E18226288C0000CF150B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 55E5E18126288C0000CF150B /* Assets.xcassets */; };
+		55E5E18926288C0000CF150B /* moany WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 55E5E18826288C0000CF150B /* moany WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		55E5E18E26288C0000CF150B /* HostingController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55E5E18D26288C0000CF150B /* HostingController.swift */; };
+		55E5E19026288C0000CF150B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55E5E18F26288C0000CF150B /* ContentView.swift */; };
+		55E5E19226288C0000CF150B /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55E5E19126288C0000CF150B /* ExtensionDelegate.swift */; };
+		55E5E19426288C0000CF150B /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55E5E19326288C0000CF150B /* NotificationController.swift */; };
+		55E5E19626288C0000CF150B /* NotificationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55E5E19526288C0000CF150B /* NotificationView.swift */; };
+		55E5E19826288C0000CF150B /* ComplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55E5E19726288C0000CF150B /* ComplicationController.swift */; };
+		55E5E19A26288C0000CF150B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 55E5E19926288C0000CF150B /* Assets.xcassets */; };
+		55E5E19D26288C0000CF150B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 55E5E19C26288C0000CF150B /* Preview Assets.xcassets */; };
+		55E5E1A926288C0100CF150B /* moanyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55E5E1A826288C0100CF150B /* moanyTests.swift */; };
+		55E5E1B426288C0100CF150B /* moanyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55E5E1B326288C0100CF150B /* moanyUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		55E5E17B26288BFE00CF150B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 55E5E16F26288BFD00CF150B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 55E5E17826288BFE00CF150B;
+			remoteInfo = "moany WatchKit App";
+		};
+		55E5E18A26288C0000CF150B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 55E5E16F26288BFD00CF150B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 55E5E18726288C0000CF150B;
+			remoteInfo = "moany WatchKit Extension";
+		};
+		55E5E1A526288C0100CF150B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 55E5E16F26288BFD00CF150B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 55E5E18726288C0000CF150B;
+			remoteInfo = "moany WatchKit Extension";
+		};
+		55E5E1B026288C0100CF150B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 55E5E16F26288BFD00CF150B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 55E5E17826288BFE00CF150B;
+			remoteInfo = "moany WatchKit App";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		55E5E1BB26288C0100CF150B /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				55E5E18926288C0000CF150B /* moany WatchKit Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		55E5E1BF26288C0100CF150B /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				55E5E17A26288BFE00CF150B /* moany WatchKit App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		55E5E17526288BFD00CF150B /* moany.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = moany.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		55E5E17926288BFE00CF150B /* moany WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "moany WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		55E5E17F26288BFE00CF150B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		55E5E18126288C0000CF150B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		55E5E18326288C0000CF150B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		55E5E18826288C0000CF150B /* moany WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "moany WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		55E5E18D26288C0000CF150B /* HostingController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HostingController.swift; sourceTree = "<group>"; };
+		55E5E18F26288C0000CF150B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		55E5E19126288C0000CF150B /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		55E5E19326288C0000CF150B /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
+		55E5E19526288C0000CF150B /* NotificationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationView.swift; sourceTree = "<group>"; };
+		55E5E19726288C0000CF150B /* ComplicationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComplicationController.swift; sourceTree = "<group>"; };
+		55E5E19926288C0000CF150B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		55E5E19C26288C0000CF150B /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		55E5E19E26288C0000CF150B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		55E5E19F26288C0100CF150B /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+		55E5E1A426288C0100CF150B /* moanyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = moanyTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		55E5E1A826288C0100CF150B /* moanyTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = moanyTests.swift; sourceTree = "<group>"; };
+		55E5E1AA26288C0100CF150B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		55E5E1AF26288C0100CF150B /* moanyUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = moanyUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		55E5E1B326288C0100CF150B /* moanyUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = moanyUITests.swift; sourceTree = "<group>"; };
+		55E5E1B526288C0100CF150B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		55E5E18526288C0000CF150B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		55E5E1A126288C0100CF150B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		55E5E1AC26288C0100CF150B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		55E5E16E26288BFD00CF150B = {
+			isa = PBXGroup;
+			children = (
+				55E5E17D26288BFE00CF150B /* moany WatchKit App */,
+				55E5E18C26288C0000CF150B /* moany WatchKit Extension */,
+				55E5E1A726288C0100CF150B /* moanyTests */,
+				55E5E1B226288C0100CF150B /* moanyUITests */,
+				55E5E17626288BFD00CF150B /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		55E5E17626288BFD00CF150B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				55E5E17526288BFD00CF150B /* moany.app */,
+				55E5E17926288BFE00CF150B /* moany WatchKit App.app */,
+				55E5E18826288C0000CF150B /* moany WatchKit Extension.appex */,
+				55E5E1A426288C0100CF150B /* moanyTests.xctest */,
+				55E5E1AF26288C0100CF150B /* moanyUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		55E5E17D26288BFE00CF150B /* moany WatchKit App */ = {
+			isa = PBXGroup;
+			children = (
+				55E5E17E26288BFE00CF150B /* Interface.storyboard */,
+				55E5E18126288C0000CF150B /* Assets.xcassets */,
+				55E5E18326288C0000CF150B /* Info.plist */,
+			);
+			path = "moany WatchKit App";
+			sourceTree = "<group>";
+		};
+		55E5E18C26288C0000CF150B /* moany WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				55E5E18D26288C0000CF150B /* HostingController.swift */,
+				55E5E18F26288C0000CF150B /* ContentView.swift */,
+				55E5E19126288C0000CF150B /* ExtensionDelegate.swift */,
+				55E5E19326288C0000CF150B /* NotificationController.swift */,
+				55E5E19526288C0000CF150B /* NotificationView.swift */,
+				55E5E19726288C0000CF150B /* ComplicationController.swift */,
+				55E5E19926288C0000CF150B /* Assets.xcassets */,
+				55E5E19E26288C0000CF150B /* Info.plist */,
+				55E5E19F26288C0100CF150B /* PushNotificationPayload.apns */,
+				55E5E19B26288C0000CF150B /* Preview Content */,
+			);
+			path = "moany WatchKit Extension";
+			sourceTree = "<group>";
+		};
+		55E5E19B26288C0000CF150B /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				55E5E19C26288C0000CF150B /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		55E5E1A726288C0100CF150B /* moanyTests */ = {
+			isa = PBXGroup;
+			children = (
+				55E5E1A826288C0100CF150B /* moanyTests.swift */,
+				55E5E1AA26288C0100CF150B /* Info.plist */,
+			);
+			path = moanyTests;
+			sourceTree = "<group>";
+		};
+		55E5E1B226288C0100CF150B /* moanyUITests */ = {
+			isa = PBXGroup;
+			children = (
+				55E5E1B326288C0100CF150B /* moanyUITests.swift */,
+				55E5E1B526288C0100CF150B /* Info.plist */,
+			);
+			path = moanyUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		55E5E17426288BFD00CF150B /* moany */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 55E5E1C026288C0100CF150B /* Build configuration list for PBXNativeTarget "moany" */;
+			buildPhases = (
+				55E5E17326288BFD00CF150B /* Resources */,
+				55E5E1BF26288C0100CF150B /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				55E5E17C26288BFE00CF150B /* PBXTargetDependency */,
+			);
+			name = moany;
+			productName = moany;
+			productReference = 55E5E17526288BFD00CF150B /* moany.app */;
+			productType = "com.apple.product-type.application.watchapp2-container";
+		};
+		55E5E17826288BFE00CF150B /* moany WatchKit App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 55E5E1BC26288C0100CF150B /* Build configuration list for PBXNativeTarget "moany WatchKit App" */;
+			buildPhases = (
+				55E5E17726288BFE00CF150B /* Resources */,
+				55E5E1BB26288C0100CF150B /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				55E5E18B26288C0000CF150B /* PBXTargetDependency */,
+			);
+			name = "moany WatchKit App";
+			productName = "moany WatchKit App";
+			productReference = 55E5E17926288BFE00CF150B /* moany WatchKit App.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		55E5E18726288C0000CF150B /* moany WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 55E5E1B826288C0100CF150B /* Build configuration list for PBXNativeTarget "moany WatchKit Extension" */;
+			buildPhases = (
+				55E5E18426288C0000CF150B /* Sources */,
+				55E5E18526288C0000CF150B /* Frameworks */,
+				55E5E18626288C0000CF150B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "moany WatchKit Extension";
+			productName = "moany WatchKit Extension";
+			productReference = 55E5E18826288C0000CF150B /* moany WatchKit Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
+		55E5E1A326288C0100CF150B /* moanyTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 55E5E1C326288C0100CF150B /* Build configuration list for PBXNativeTarget "moanyTests" */;
+			buildPhases = (
+				55E5E1A026288C0100CF150B /* Sources */,
+				55E5E1A126288C0100CF150B /* Frameworks */,
+				55E5E1A226288C0100CF150B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				55E5E1A626288C0100CF150B /* PBXTargetDependency */,
+			);
+			name = moanyTests;
+			productName = moanyTests;
+			productReference = 55E5E1A426288C0100CF150B /* moanyTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		55E5E1AE26288C0100CF150B /* moanyUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 55E5E1C626288C0100CF150B /* Build configuration list for PBXNativeTarget "moanyUITests" */;
+			buildPhases = (
+				55E5E1AB26288C0100CF150B /* Sources */,
+				55E5E1AC26288C0100CF150B /* Frameworks */,
+				55E5E1AD26288C0100CF150B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				55E5E1B126288C0100CF150B /* PBXTargetDependency */,
+			);
+			name = moanyUITests;
+			productName = moanyUITests;
+			productReference = 55E5E1AF26288C0100CF150B /* moanyUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		55E5E16F26288BFD00CF150B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1250;
+				LastUpgradeCheck = 1250;
+				TargetAttributes = {
+					55E5E17426288BFD00CF150B = {
+						CreatedOnToolsVersion = 12.5;
+					};
+					55E5E17826288BFE00CF150B = {
+						CreatedOnToolsVersion = 12.5;
+					};
+					55E5E18726288C0000CF150B = {
+						CreatedOnToolsVersion = 12.5;
+					};
+					55E5E1A326288C0100CF150B = {
+						CreatedOnToolsVersion = 12.5;
+						TestTargetID = 55E5E18726288C0000CF150B;
+					};
+					55E5E1AE26288C0100CF150B = {
+						CreatedOnToolsVersion = 12.5;
+						TestTargetID = 55E5E17826288BFE00CF150B;
+					};
+				};
+			};
+			buildConfigurationList = 55E5E17226288BFD00CF150B /* Build configuration list for PBXProject "moany" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 55E5E16E26288BFD00CF150B;
+			productRefGroup = 55E5E17626288BFD00CF150B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				55E5E17426288BFD00CF150B /* moany */,
+				55E5E17826288BFE00CF150B /* moany WatchKit App */,
+				55E5E18726288C0000CF150B /* moany WatchKit Extension */,
+				55E5E1A326288C0100CF150B /* moanyTests */,
+				55E5E1AE26288C0100CF150B /* moanyUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		55E5E17326288BFD00CF150B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		55E5E17726288BFE00CF150B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				55E5E18226288C0000CF150B /* Assets.xcassets in Resources */,
+				55E5E18026288BFE00CF150B /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		55E5E18626288C0000CF150B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				55E5E19D26288C0000CF150B /* Preview Assets.xcassets in Resources */,
+				55E5E19A26288C0000CF150B /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		55E5E1A226288C0100CF150B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		55E5E1AD26288C0100CF150B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		55E5E18426288C0000CF150B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				55E5E19026288C0000CF150B /* ContentView.swift in Sources */,
+				55E5E18E26288C0000CF150B /* HostingController.swift in Sources */,
+				55E5E19426288C0000CF150B /* NotificationController.swift in Sources */,
+				55E5E19226288C0000CF150B /* ExtensionDelegate.swift in Sources */,
+				55E5E19626288C0000CF150B /* NotificationView.swift in Sources */,
+				55E5E19826288C0000CF150B /* ComplicationController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		55E5E1A026288C0100CF150B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				55E5E1A926288C0100CF150B /* moanyTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		55E5E1AB26288C0100CF150B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				55E5E1B426288C0100CF150B /* moanyUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		55E5E17C26288BFE00CF150B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 55E5E17826288BFE00CF150B /* moany WatchKit App */;
+			targetProxy = 55E5E17B26288BFE00CF150B /* PBXContainerItemProxy */;
+		};
+		55E5E18B26288C0000CF150B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 55E5E18726288C0000CF150B /* moany WatchKit Extension */;
+			targetProxy = 55E5E18A26288C0000CF150B /* PBXContainerItemProxy */;
+		};
+		55E5E1A626288C0100CF150B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 55E5E18726288C0000CF150B /* moany WatchKit Extension */;
+			targetProxy = 55E5E1A526288C0100CF150B /* PBXContainerItemProxy */;
+		};
+		55E5E1B126288C0100CF150B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 55E5E17826288BFE00CF150B /* moany WatchKit App */;
+			targetProxy = 55E5E1B026288C0100CF150B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		55E5E17E26288BFE00CF150B /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				55E5E17F26288BFE00CF150B /* Base */,
+			);
+			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		55E5E1B626288C0100CF150B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		55E5E1B726288C0100CF150B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		55E5E1B926288C0100CF150B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"moany WatchKit Extension/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "moany WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.imgkl.moany.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 7.4;
+			};
+			name = Debug;
+		};
+		55E5E1BA26288C0100CF150B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"moany WatchKit Extension/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "moany WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.imgkl.moany.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 7.4;
+			};
+			name = Release;
+		};
+		55E5E1BD26288C0100CF150B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				IBSC_MODULE = moany_WatchKit_Extension;
+				INFOPLIST_FILE = "moany WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = com.imgkl.moany.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 7.4;
+			};
+			name = Debug;
+		};
+		55E5E1BE26288C0100CF150B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				IBSC_MODULE = moany_WatchKit_Extension;
+				INFOPLIST_FILE = "moany WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = com.imgkl.moany.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 7.4;
+			};
+			name = Release;
+		};
+		55E5E1C126288C0100CF150B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.imgkl.moany;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		55E5E1C226288C0100CF150B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.imgkl.moany;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		55E5E1C426288C0100CF150B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = moanyTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.imgkl.moanyTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/moany WatchKit Extension.appex/moany WatchKit Extension";
+				WATCHOS_DEPLOYMENT_TARGET = 7.4;
+			};
+			name = Debug;
+		};
+		55E5E1C526288C0100CF150B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = moanyTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.imgkl.moanyTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/moany WatchKit Extension.appex/moany WatchKit Extension";
+				WATCHOS_DEPLOYMENT_TARGET = 7.4;
+			};
+			name = Release;
+		};
+		55E5E1C726288C0100CF150B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = moanyUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.imgkl.moanyUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				TEST_TARGET_NAME = "moany WatchKit App";
+				WATCHOS_DEPLOYMENT_TARGET = 7.4;
+			};
+			name = Debug;
+		};
+		55E5E1C826288C0100CF150B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = moanyUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.imgkl.moanyUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				TEST_TARGET_NAME = "moany WatchKit App";
+				WATCHOS_DEPLOYMENT_TARGET = 7.4;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		55E5E17226288BFD00CF150B /* Build configuration list for PBXProject "moany" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				55E5E1B626288C0100CF150B /* Debug */,
+				55E5E1B726288C0100CF150B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		55E5E1B826288C0100CF150B /* Build configuration list for PBXNativeTarget "moany WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				55E5E1B926288C0100CF150B /* Debug */,
+				55E5E1BA26288C0100CF150B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		55E5E1BC26288C0100CF150B /* Build configuration list for PBXNativeTarget "moany WatchKit App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				55E5E1BD26288C0100CF150B /* Debug */,
+				55E5E1BE26288C0100CF150B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		55E5E1C026288C0100CF150B /* Build configuration list for PBXNativeTarget "moany" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				55E5E1C126288C0100CF150B /* Debug */,
+				55E5E1C226288C0100CF150B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		55E5E1C326288C0100CF150B /* Build configuration list for PBXNativeTarget "moanyTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				55E5E1C426288C0100CF150B /* Debug */,
+				55E5E1C526288C0100CF150B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		55E5E1C626288C0100CF150B /* Build configuration list for PBXNativeTarget "moanyUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				55E5E1C726288C0100CF150B /* Debug */,
+				55E5E1C826288C0100CF150B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 55E5E16F26288BFD00CF150B /* Project object */;
+}
